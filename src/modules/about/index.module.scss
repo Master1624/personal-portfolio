@@ -1,7 +1,6 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
 }
 
 .about-content {
@@ -31,15 +30,14 @@
   flex-direction: column;
 }
 
-.location-container {
-  @extend .common-display;
-}
-
-.email-container {
+.location-container,
+.email-container,
+.phone-container {
   @extend .common-display;
 }
 
 .linkedin-container {
   @extend .common-display;
   align-items: center;
+  text-decoration: none;
 }

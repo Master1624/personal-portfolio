@@ -1,6 +1,11 @@
+import { environmentVariables } from "../../environmentVariables";
 import styles from "./index.module.scss";
 
 function About() {
+  const {
+    personalInformation: { phoneNumber, email, linkedinProfile },
+  } = environmentVariables;
+
   return (
     <div className={styles["about-container"]}>
       <div className={styles["about-content"]}>
@@ -22,19 +27,25 @@ function About() {
           <strong>
             <p>Email:</p>
           </strong>
-          <p>jdpa83@gmail.com</p>
+          <p>{email}</p>
         </div>
         <div className={styles["linkedin-container"]}>
           <strong>
             <p>LinkedIn:</p>
           </strong>
           <a
-            href="https://www.linkedin.com/in/juan-david-paladines-amaya/"
+            href={linkedinProfile}
             target="_blank"
             rel="noreferrer"
           >
-            https://www.linkedin.com/in/juan-david-paladines-amaya/
+            {linkedinProfile}
           </a>
+        </div>
+        <div className={styles["phone-container"]}>
+          <strong>
+            <p>Phone:</p>
+          </strong>
+          <p>{phoneNumber}</p>
         </div>
       </div>
     </div>
