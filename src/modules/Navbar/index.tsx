@@ -1,20 +1,19 @@
 import { Link } from "react-router-dom";
 import { links } from "./const";
+import { Button } from "@mui/material";
+import styles from "./Navbar.module.scss"
 
 function Navbar() {
   return (
-    <div>
-      <nav>
-        <ul>
-          {links.map((link) => (
-            <li key={link.name} >
-              <Link to={link.linkPath}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+    <div className={styles["navigation-container"]}>
+      {links.map((link) => (
+        <Link
+          key={link.name}
+          to={link.linkPath}
+        >
+          <Button>{link.name}</Button>
+        </Link>
+      ))}
     </div>
   );
 }
