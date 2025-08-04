@@ -1,9 +1,12 @@
-import About from "./modules/about";
+import Navbar from "./modules/Navbar";
+import AppRoutes from "./components/AppRoutes";
+import styles from "./App.module.scss";
 
 function App() {
   return (
-    <div className="App">
-      <About />
+    <div className={styles["app-container"]}>
+      <AppRoutes />
+      <Navbar />
     </div>
   );
 }
