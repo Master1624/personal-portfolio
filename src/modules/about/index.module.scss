@@ -17,27 +17,3 @@
     margin-top: 0.5rem;
   }
 }
-
-.common-display {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  gap: 0.4rem;
-}
-
-.information-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.location-container,
-.email-container,
-.phone-container {
-  @extend .common-display;
-}
-
-.linkedin-container {
-  @extend .common-display;
-  align-items: center;
-  text-decoration: none;
-}
