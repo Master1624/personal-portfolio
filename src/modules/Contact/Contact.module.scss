@@ -1,0 +1,23 @@
+.information-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-display {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 0.4rem;
+}
+
+.location-container,
+.email-container,
+.phone-container {
+  @extend .common-display;
+}
+
+.linkedin-container {
+  @extend .common-display;
+  align-items: center;
+  text-decoration: none;
+}

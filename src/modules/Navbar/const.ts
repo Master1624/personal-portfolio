@@ -7,4 +7,8 @@ export const links = [
     name: "About",
     linkPath: "/about",
   },
+  {
+    name: "Contact",
+    linkPath: "/contact",
+  },
 ];
