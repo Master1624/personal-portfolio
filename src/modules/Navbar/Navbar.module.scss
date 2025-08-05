@@ -1,16 +1,24 @@
+.navigation-card {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0) !important;
+}
+
 .navigation-container {
   display: flex;
   justify-content: space-evenly;
   background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0) 90px
+      rgba(0, 0, 0, 0) 100px
     ),
-    linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 70px);
+    linear-gradient(to top, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0) 70px);
   height: 2rem;
 }
 
 .navigation-button {
-  height: 3rem;
+  height: 2rem;
   width: 10rem;
 }

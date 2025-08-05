@@ -5,11 +5,11 @@ import styles from "./Navbar.module.scss";
 
 function Navbar() {
   return (
-    <Card>
+    <Card className={styles["navigation-card"]}>
       <CardContent className={styles["navigation-container"]}>
         {links.map((link) => (
           <Link key={link.name} to={link.linkPath}>
-            <Button color="info" className={styles["navigation-button"]}>
+            <Button>
               {link.name}
             </Button>
           </Link>
