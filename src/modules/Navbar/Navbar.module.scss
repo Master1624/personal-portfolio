@@ -1,4 +1,16 @@
 .navigation-container {
   display: flex;
   justify-content: space-evenly;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0) 90px
+    ),
+    linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 70px);
+  height: 2rem;
+}
+
+.navigation-button {
+  height: 3rem;
+  width: 10rem;
 }
