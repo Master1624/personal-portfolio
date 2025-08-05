@@ -1,13 +1,15 @@
 import styles from "./index.module.scss";
 
 function About() {
-
   return (
-    <div className={styles["about-container"]}>
+    <div
+      transition-style="in:circle:bottom-right"
+      className={styles["about-container"]}
+    >
       <div className={styles["about-content"]}>
-        <p className={styles["about-content__title"]}>
+        <h1 className={styles["about-content__title"]}>
           Juan David Paladines Amaya
-        </p>
+        </h1>
         <p className={styles["about-content__description"]}>
           Frontend Developer
         </p>
